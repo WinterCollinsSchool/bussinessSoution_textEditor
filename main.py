@@ -12,9 +12,9 @@ def save_as():
 	text=text_box.get("1.0", "end-1c")
 	f = open(clean_file_name,"x")
 	with open(clean_file_name, "w") as f:
-	  f.write(text)
+		f.write(text)
 	with open(clean_file_name) as f:
-	  print(f.read())
+		print(f.read())
 	self.distroy()
 
 save=Button(root,text="Save",command = lambda:save_as())
