@@ -15,7 +15,7 @@ def save_as():
 	  f.write(text)
 	with open(clean_file_name) as f:
 	  print(f.read())
-	  self.distroy()
+	self.distroy()
 
 save=Button(root,text="Save",command = lambda:save_as())
 label = Label(root, text="Write your notes here!")
