@@ -21,7 +21,6 @@ save=Button(root,text="Save",command = lambda:save_as())
 label = Label(root, text="Write your notes here!")
 text_box = Text(root,height=15,width=50)
 
-# Place widgets in window (with pack function!)
 label.grid(row=0,column=0,pady=5,padx=10)
 text_box.grid(row=1,column=0, columnspan=2,padx=5)
 save.grid(row=0,column=1)
