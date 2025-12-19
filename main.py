@@ -1,7 +1,7 @@
 import customtkinter
 
 root=customtkinter.CTk()
-root.title("Word Prosesser")
+root.title("Word Processor")
 
 root.geometry("300x150")
 
