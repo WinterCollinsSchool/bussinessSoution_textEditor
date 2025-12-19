@@ -1,2 +1,5 @@
 .DS_Store
 test.txt
+.idea/bussinessSoution_textEditor.iml
+/.idea
+.idea/misc.xml
