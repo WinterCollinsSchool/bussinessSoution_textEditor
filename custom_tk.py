@@ -6,14 +6,15 @@ root.title("Word Prosesser")
 root.geometry("300x150")
 
 def save_as():
-	new_file_name=input("Save as:")
-	clean_file_name=new_file_name+".txt"
+	new_file_name=customtkinter.CTkInputDialog(text="Save as:", title="Save")
+	clean_file_name=new_file_name.get_input()+".txt"
 	text=text_box.get("1.0", "end-1c")
 	f = open(clean_file_name,"x")
 	with open(clean_file_name, "w") as f:
 		f.write(text)
 	with open(clean_file_name) as f:
 		print(f.read())
+	root.destroy()
 
 save=customtkinter.CTkButton(root,text="Save",command = lambda:save_as())
 label = customtkinter.CTkLabel(root, text="Write your notes here!")
