@@ -12,3 +12,5 @@ read=customtkinter.CTkButton(app,text='Read From File')
 text_box.pack()
 write.pack()
 read.pack()
+
+app.mainloop()
