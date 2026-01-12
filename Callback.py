@@ -14,7 +14,7 @@ def callback3():
 	label3.configure(text="Updated 3!")
 def random():
 	canedets=('label1','label2','label3','button1','button2','button3')
-	
+
 
 
 label1=customtkinter.CTkLabel(root, text="Lable 1!")
