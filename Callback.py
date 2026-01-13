@@ -4,7 +4,7 @@ import random
 root = customtkinter.CTk()
 root.title("Enter Title Here")
 
-root.geometry("300x150")
+root.geometry("600x200")
 
 def callback1():
 	label1.configure(text="Updated 1!")
@@ -13,8 +13,8 @@ def callback2():
 def callback3():
 	label3.configure(text="Updated 3!")
 def text_random():
-	candidate=(label1,label2,label3,button1,button2,button3)
-	victor=random.choice(candidate)
+	candidates=(label1,label2,label3,button1,button2,button3)
+	victor=random.choice(candidates)
 	victor.configure(text="RANDOMLY PICKED!")
 
 
