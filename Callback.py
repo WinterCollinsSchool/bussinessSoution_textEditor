@@ -4,7 +4,7 @@ import random
 root = customtkinter.CTk()
 root.title("Enter Title Here")
 
-root.geometry("600x200")
+root.geometry("350x150")
 
 def callback1():
 	label1.configure(text="Updated 1!")

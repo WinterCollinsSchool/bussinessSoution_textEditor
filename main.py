@@ -18,6 +18,8 @@ def save_as():
     root.destroy()
 
 root.grid_columnconfigure(1, weight=1)
+root.grid_rowconfigure(1, weight=1)
+
 save = customtkinter.CTkButton(root, text="Save", command=lambda: save_as())
 label = customtkinter.CTkLabel(root, text="Write your notes here!")
 text_box = customtkinter.CTkTextbox(root, height=500, width=500)
