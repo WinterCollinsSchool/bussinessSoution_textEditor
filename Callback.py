@@ -27,15 +27,17 @@ button3=customtkinter.CTkButton(root, text="Button 3!",command=callback3)
 
 
 
-random_button=customtkinter.CTkButton(root, text="Random Button!",command=random())
+random_button=customtkinter.CTkButton(root, text="Random Button!",command=random)
 
 
 button1.grid(row=0,column=0)
 button2.grid(row=1,column=0)
 button3.grid(row=2,column=0)
 
-label1.grid(row=0,column=3)
-label2.grid(row=1,column=3)
-label3.grid(row=2,column=3)
+label1.grid(row=0,column=2)
+label2.grid(row=1,column=2)
+label3.grid(row=2,column=2)
+
+random_button.grid(row=3,column=1)
 
 root.mainloop()
