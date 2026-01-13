@@ -12,9 +12,9 @@ def callback2():
 	label2.configure(text="Updated 2!")
 def callback3():
 	label3.configure(text="Updated 3!")
-def random():
-	canedets=('label1','label2','label3','button1','button2','button3')
-
+def text_random():
+	candidate=random.choice(label1,label2,label3,button1,button2,button3)
+	#candidate.configure(text="")
 
 
 label1=customtkinter.CTkLabel(root, text="Lable 1!")
@@ -25,9 +25,7 @@ button1=customtkinter.CTkButton(root, text="Button 1!",command=callback1)
 button2=customtkinter.CTkButton(root, text="Button 2!",command=callback2)
 button3=customtkinter.CTkButton(root, text="Button 3!",command=callback3)
 
-
-
-random_button=customtkinter.CTkButton(root, text="Random Button!",command=random)
+random_button=customtkinter.CTkButton(root, text="Random Button!",command=text_random)
 
 
 button1.grid(row=0,column=0)
